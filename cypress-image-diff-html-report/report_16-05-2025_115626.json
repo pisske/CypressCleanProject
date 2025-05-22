@@ -1,0 +1,28 @@
+{
+  "total": 1,
+  "totalPassed": 0,
+  "totalFailed": 1,
+  "totalSuites": 1,
+  "suites": [
+    {
+      "name": "visual..js",
+      "path": "cypress\\e2e\\visual..js",
+      "tests": [
+        {
+          "status": "fail",
+          "name": "visual.-homepage",
+          "percentage": 0.533877956093353,
+          "failureThreshold": 0.09,
+          "specPath": "cypress\\e2e\\visual..js",
+          "specFilename": "visual..js",
+          "baselinePath": "cypress-image-diff-screenshots\\baseline\\visual.-homepage.png",
+          "diffPath": "cypress-image-diff-screenshots\\diff\\visual.-homepage.png",
+          "comparisonPath": "cypress-image-diff-screenshots\\comparison\\visual.-homepage.png"
+        }
+      ]
+    }
+  ],
+  "browserName": "Chrome",
+  "browserVersion": "136.0.7103.94",
+  "cypressVersion": "14.3.3"
+}

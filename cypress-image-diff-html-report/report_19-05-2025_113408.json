@@ -1,0 +1,31 @@
+{
+  "total": 1,
+  "totalPassed": 1,
+  "totalFailed": 0,
+  "totalSuites": 1,
+  "suites": [
+    {
+      "name": "visual.js",
+      "path": "cypress\\e2e\\visual.js",
+      "tests": [
+        {
+          "status": "pass",
+          "name": "visual-homepage",
+          "percentage": 0,
+          "failureThreshold": 0.09,
+          "specPath": "cypress\\e2e\\visual.js",
+          "specFilename": "visual.js",
+          "baselinePath": "cypress-image-diff-screenshots\\baseline\\visual-homepage.png",
+          "diffPath": "",
+          "comparisonPath": "cypress-image-diff-screenshots\\comparison\\visual-homepage.png"
+        }
+      ]
+    }
+  ],
+  "startedAt": "2025-05-19T09:34:08.203Z",
+  "endedAt": "2025-05-19T09:34:16.893Z",
+  "duration": 8690,
+  "browserName": "electron",
+  "browserVersion": "130.0.6723.137",
+  "cypressVersion": "14.3.3"
+}

@@ -1,0 +1,50 @@
+{
+  "total": 3,
+  "totalPassed": 2,
+  "totalFailed": 1,
+  "totalSuites": 1,
+  "suites": [
+    {
+      "name": "visual_test.js",
+      "path": "cypress\\e2e\\visual_test.js",
+      "tests": [
+        {
+          "status": "pass",
+          "name": "visual_test-homepage",
+          "percentage": 0.04898547914452841,
+          "failureThreshold": 0.09,
+          "specPath": "cypress\\e2e\\visual_test.js",
+          "specFilename": "visual_test.js",
+          "baselinePath": "cypress-image-diff-screenshots\\baseline\\visual_test-homepage.png",
+          "diffPath": "",
+          "comparisonPath": "cypress-image-diff-screenshots\\comparison\\visual_test-homepage.png"
+        },
+        {
+          "status": "pass",
+          "name": "visual_test-item-page",
+          "percentage": 0.01810584742560483,
+          "failureThreshold": 0.09,
+          "specPath": "cypress\\e2e\\visual_test.js",
+          "specFilename": "visual_test.js",
+          "baselinePath": "cypress-image-diff-screenshots\\baseline\\visual_test-item-page.png",
+          "diffPath": "",
+          "comparisonPath": "cypress-image-diff-screenshots\\comparison\\visual_test-item-page.png"
+        },
+        {
+          "status": "fail",
+          "name": "visual_test-search-results",
+          "percentage": 0.12145909499471529,
+          "failureThreshold": 0.09,
+          "specPath": "cypress\\e2e\\visual_test.js",
+          "specFilename": "visual_test.js",
+          "baselinePath": "cypress-image-diff-screenshots\\baseline\\visual_test-search-results.png",
+          "diffPath": "cypress-image-diff-screenshots\\diff\\visual_test-search-results.png",
+          "comparisonPath": "cypress-image-diff-screenshots\\comparison\\visual_test-search-results.png"
+        }
+      ]
+    }
+  ],
+  "browserName": "Chrome",
+  "browserVersion": "136.0.7103.114",
+  "cypressVersion": "14.3.3"
+}

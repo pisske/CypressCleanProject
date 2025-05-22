@@ -1,0 +1,67 @@
+{
+  "total": 4,
+  "totalPassed": 2,
+  "totalFailed": 2,
+  "totalSuites": 2,
+  "suites": [
+    {
+      "name": "visual.js",
+      "path": "cypress\\e2e\\visual.js",
+      "tests": [
+        {
+          "status": "fail",
+          "name": "visual-homepage",
+          "percentage": 0.21215065943534225,
+          "failureThreshold": 0.09,
+          "specPath": "cypress\\e2e\\visual.js",
+          "specFilename": "visual.js",
+          "baselinePath": "cypress-image-diff-screenshots\\baseline\\visual-homepage.png",
+          "diffPath": "cypress-image-diff-screenshots\\diff\\visual-homepage.png",
+          "comparisonPath": "cypress-image-diff-screenshots\\comparison\\visual-homepage.png"
+        }
+      ]
+    },
+    {
+      "name": "visual_test.js",
+      "path": "cypress\\e2e\\visual_test.js",
+      "tests": [
+        {
+          "status": "pass",
+          "name": "visual_test-homepage",
+          "percentage": 0,
+          "failureThreshold": 0.09,
+          "specPath": "cypress\\e2e\\visual_test.js",
+          "specFilename": "visual_test.js",
+          "baselinePath": "cypress-image-diff-screenshots\\baseline\\visual_test-homepage.png",
+          "diffPath": "",
+          "comparisonPath": "cypress-image-diff-screenshots\\comparison\\visual_test-homepage.png"
+        },
+        {
+          "status": "fail",
+          "name": "visual_test-item-page",
+          "percentage": 0.10243617711053478,
+          "failureThreshold": 0.09,
+          "specPath": "cypress\\e2e\\visual_test.js",
+          "specFilename": "visual_test.js",
+          "baselinePath": "cypress-image-diff-screenshots\\baseline\\visual_test-item-page.png",
+          "diffPath": "cypress-image-diff-screenshots\\diff\\visual_test-item-page.png",
+          "comparisonPath": "cypress-image-diff-screenshots\\comparison\\visual_test-item-page.png"
+        },
+        {
+          "status": "pass",
+          "name": "visual_test-search-results",
+          "percentage": 0,
+          "failureThreshold": 0.09,
+          "specPath": "cypress\\e2e\\visual_test.js",
+          "specFilename": "visual_test.js",
+          "baselinePath": "cypress-image-diff-screenshots\\baseline\\visual_test-search-results.png",
+          "diffPath": "",
+          "comparisonPath": "cypress-image-diff-screenshots\\comparison\\visual_test-search-results.png"
+        }
+      ]
+    }
+  ],
+  "browserName": "Electron",
+  "browserVersion": "130.0.6723.137",
+  "cypressVersion": "14.3.3"
+}
