@@ -17,7 +17,7 @@
 import "./commands";
 import "cypress-plugin-xhr-toggle";
 import "cypress-xpath";
-import "cypress-grep";
+// import "cypress-grep";
 
 // cypress/support/{scheme}.js, where {scheme} defaults to e2e
 const compareSnapshotCommand = require("cypress-image-diff-js/command");
