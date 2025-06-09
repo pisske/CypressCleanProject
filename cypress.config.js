@@ -20,10 +20,12 @@
 //   chromeWebSecurity: false,
 // });
 const { defineConfig } = require("cypress");
+
 const getCompareSnapshotsPlugin = require("cypress-image-diff-js/plugin");
 require("dotenv").config();
 
 module.exports = defineConfig({
+  reporter: "cypress-mochawesome-reporter",
   e2e: {
     baseUrl: "https://automationteststore.com",
     trashAssetsBeforeRuns: true,
@@ -32,7 +34,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // Load plugin for visual snapshots
       getCompareSnapshotsPlugin(on, config);
-
+      require("cypress-mochawesome-reporter/plugin")(on);
       // Use dynamic import for ESM-only HTML report
       on("task", {
         async generateHtmlReport() {
