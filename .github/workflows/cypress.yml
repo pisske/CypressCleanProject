@@ -28,3 +28,10 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           browser: chrome # or use 'electro
+
+      - name: Upload Mochawesome Report Artifact
+        if: always() # ensures this runs even if tests fail
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-report
+          path: cypress/reports/html
