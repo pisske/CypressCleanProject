@@ -26,6 +26,13 @@ require("dotenv").config();
 
 module.exports = defineConfig({
   reporter: "cypress-mochawesome-reporter",
+  reporterOptions: {
+    reportDir: "cypress/reports/html", // 📁 Output folder for report
+    embeddedScreenshots: true, // 🖼️ Embed screenshots in HTML
+    inlineAssets: true, // 📦 Bundle JS/CSS inline
+    charts: true, // 📊 Show pie charts in report
+    reportPageTitle: "Cypress Test Report", // 📝 Title for the HTML report
+  },
   e2e: {
     baseUrl: "https://automationteststore.com",
     trashAssetsBeforeRuns: true,
