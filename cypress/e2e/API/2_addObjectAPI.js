@@ -39,7 +39,7 @@ describe("API Test for POST Product", () => {
       const createdProductId = response.body.id;
       cy.writeFile("cypress/fixtures/createdProductId.json", {
         id: createdProductId,
-      });
+      }).wait(5000);
 
       cy.log("Created Product ID: " + createdProductId);
     });
