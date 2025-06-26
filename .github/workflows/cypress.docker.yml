@@ -35,4 +35,7 @@ jobs:
         run: |
           docker run -v ${{ github.workspace }}:/e2e -w /e2e cypress/included:latest
 
-      - name: Merge mochawesome and gene
+      - name: Merge mochawesome reports and generate final HTML
+        run: |
+          mochawesome-merge cypress/reports/mochawesome/*.json > mochawesome.json
+          marge mochawesome.json -f report --reportDir cypress/reports/mochawesome
